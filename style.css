@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Oleo+Script+Swash+Caps&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 2px solid white;
+}
+
+.hour {
+  background-color: #fff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  width: 10%;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.present {
+  background-color: #ff6961;
+  color: black;
+}
+
+.future {
+  background-color: #77dd77;
+  color: black;
+}
+
+.saveBtn {
+  border-left: 3px solid black;
+  border-right: 3px #fff solid;
+  border-top: none;
+  background-color: #06aed5;
+  color: white;
+  width: 10%;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+  width: 70%;
+  border-left: 2px solid black;
+}
+
+.clearBtn {
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+  width: 10%;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+
+img {
+  background: url("../Assets/15495470391574055266.svg") no-repeat center
+    center/cover;
+  width: 80%;
+  height: 80%;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+.input {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+.saveBtn:hover,
+.clearBtn:hover {
+  background-color: #058983;
+  transition: 0.2s all ease-in-out;
+}
+
+.saveBtn:active,
+.clearBtn:active {
+  transform: scale(0.94);
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.saveBtn:hover::after {
+  content: "Save";
+  color: #02ffd5;
+  position: absolute;
+  bottom: 1px;
+  right: 35%;
+  font-size: 12px;
+}
+
+.clearBtn:hover::after {
+  content: "Clear Text";
+  color: #02ffd5;
+  font-size: 12px;
+  position: absolute;
+  bottom: 3px;
+  right: 15%;
+}
+
+.fa-pen-to-square:hover::after {
+  content: "Edit";
+  color: #02ffd5;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  right: 35%;
+}
